@@ -2,9 +2,4 @@
   <input type="radio" name="direction" (click)="changeDirection(dir)">{{ dir | titlecase }}
 </ng-container>
 
-<div [ngSwitch]="direction">
-  <ng-container *ngFor="let dir of directions">
-    <span *ngSwitchCase="dir">Go to <b>{{ dir }}</b></span>
-  </ng-container>
-  <span *ngSwitchDefault>No Direction</span>
-</div>
+<span style="display: block" [innerText]="direction ? 'Go to ' + direction : 'No direction'"></span>

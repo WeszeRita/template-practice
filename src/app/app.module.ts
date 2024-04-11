@@ -5,13 +5,10 @@ import { TemplateComponent } from './componenets/template/template.component';
 import {
   ContainerWithNgSwitchCaseComponent,
 } from './componenets/template-with-ng-switch-case/container-with-ng-switch-case.component';
-import {
-  InputFromParentComponentComponent,
-} from './componenets/input-from-parent-component/input-from-parent-component.component';
 import { TemplateOutletComponent } from './componenets/template-outlet/template-outlet.component';
-import { ReusableComponentComponent } from './componenets/reusable-component/reusable-component.component';
 import { ContentParentComponent } from './componenets/content/content-parent/content-parent.component';
 import { ContentChildComponent } from './componenets/content/content-child/content-child.component';
+import { Renderer2Component } from './componenets/renderer2/renderer2.component';
 
 @NgModule({
   imports: [
@@ -21,11 +18,10 @@ import { ContentChildComponent } from './componenets/content/content-child/conte
     AppComponent,
     TemplateComponent,
     ContainerWithNgSwitchCaseComponent,
-    InputFromParentComponentComponent,
     TemplateOutletComponent,
-    ReusableComponentComponent,
     ContentParentComponent,
     ContentChildComponent,
+    Renderer2Component,
   ],
   bootstrap: [AppComponent],
 })

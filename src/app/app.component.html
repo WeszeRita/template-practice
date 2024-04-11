@@ -4,18 +4,6 @@
 <app-template [data]="funData"></app-template>
 <app-template [data]="notFunData"></app-template>
 
-<h2>reusable component</h2>
-<app-reusable-component [textColor]="'ForestGreen'"></app-reusable-component>
-<app-reusable-component [textColor]="'Gold'"></app-reusable-component>
-<app-reusable-component [textColor]="'Magenta'"></app-reusable-component>
-
-<h2>input from parent</h2>
-<div style="display: flex; flex-direction: column">
-  <app-input-from-parent-component [name]="'Hermione Granger'"></app-input-from-parent-component>
-  <app-input-from-parent-component [name]="'Frodo Baggins'"></app-input-from-parent-component>
-  <app-input-from-parent-component [name]="'Katniss Everdeen'"></app-input-from-parent-component>
-</div>
-
 <h2>ng-templateOutlet - if/else without if/else + context</h2>
 <app-template-outlet></app-template-outlet>
 
@@ -24,3 +12,6 @@
 
 <h2>ng-container with ngSwitch</h2>
 <app-container-with-ng-switch-case></app-container-with-ng-switch-case>
+
+<h2>renderer2</h2>
+<app-renderer2></app-renderer2>
