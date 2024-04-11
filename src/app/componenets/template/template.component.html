@@ -1,0 +1,7 @@
+<div *ngIf="data; else sorry">
+  <span>{{ data | json }}</span>
+</div>
+
+<ng-template #sorry>
+  <span>sorry, there is no data or fun</span>
+</ng-template>
