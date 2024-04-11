@@ -1,11 +1,12 @@
 <div style="display: flex; flex-direction: column">
   <ng-container *ngTemplateOutlet="greet"></ng-container>
-  <ng-container *ngTemplateOutlet="eng; context: context"></ng-container>
-  <ng-container *ngTemplateOutlet="hun; context: context"></ng-container>
+  <ng-container *ngTemplateOutlet="hun; context: {person: 'Eva'}"></ng-container>
+  <ng-container *ngTemplateOutlet="hun; context: {person: 'Peter'}"></ng-container>
+  <ng-container *ngTemplateOutlet="hun; context: {person: 'John'}"></ng-container>
 
   <ng-template #greet><span>Hello</span></ng-template>
   <ng-template #eng let-name><span>Hello {{ name }}!</span></ng-template>
-  <ng-template #hun let-person="localHu"><span>Szia {{ person }}!</span></ng-template>
+  <ng-template #hun let-person="person"><span>Hello {{ person }}!</span></ng-template>
 </div>
 
 <span>Using the key <b>$implicit</b> in the context object will set its value as default.</span>
