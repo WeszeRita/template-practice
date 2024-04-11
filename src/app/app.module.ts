@@ -9,6 +9,7 @@ import { TemplateOutletComponent } from './componenets/template-outlet/template-
 import { ContentParentComponent } from './componenets/content/content-parent/content-parent.component';
 import { ContentChildComponent } from './componenets/content/content-child/content-child.component';
 import { Renderer2Component } from './componenets/renderer2/renderer2.component';
+import { ClassesAndStylesComponent } from './componenets/classes-and-styles/classes-and-styles.component';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { Renderer2Component } from './componenets/renderer2/renderer2.component'
     ContentParentComponent,
     ContentChildComponent,
     Renderer2Component,
+    ClassesAndStylesComponent,
   ],
   bootstrap: [AppComponent],
 })

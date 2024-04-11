@@ -1,0 +1,13 @@
+<p class="purple-text {{ getClass() }}">"The universe is full of magical things, patiently waiting for our wits to grow sharper." - Eden Phillpotts</p>
+<p [class]="'purple-text'">"The only way to do great work is to love what you do." - Steve Jobs</p>
+<p [class]="condition ? 'large-text' : 'purple-text'">"The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb</p>
+<p [class.large-text]="condition">"Happiness is not something ready-made. It comes from your own actions." - Dalai Lama</p>
+<p [ngClass]="{'bold': true, 'border': true, 'underline': false}">"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p>
+<p [ngClass]="['bold', 'purple-text']">"Success is not final, failure is not fatal: It is the courage to continue that counts." - Winston Churchill</p>
+
+<p style="text-decoration: line-through">"The universe is full of magical things, patiently waiting for our wits to grow sharper." - Eden Phillpotts</p>
+<p [style.opacity]="'0.5'">"The only way to do great work is to love what you do." - Steve Jobs</p>
+<p [ngStyle]="{ opacity: 0.2 }">"The best time to plant a tree was 20 years ago. The second best time is now." - Chinese Proverb</p>
+<p [style.color]="'red'">"Happiness is not something ready-made. It comes from your own actions." - Dalai Lama</p>
+<p [style.margin-bottom.rem]="2">"Happiness is not something ready-made. It comes from your own actions." - Dalai Lama</p>
+<p [ngStyle]="{'font-style': 'oblique'}">"The future belongs to those who believe in the beauty of their dreams." - Eleanor Roosevelt</p>
